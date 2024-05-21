@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <h1>Index</h1>
+    <!-- Fetch data form products -->
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+        </tr>
+        
+        {% for product in products %}
+        <tr>
+            <td>{{product.id}}</td>
+            <td>{{product.product_name}}</td>
+            <td>{{product.product_price}}</td>
+           
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
